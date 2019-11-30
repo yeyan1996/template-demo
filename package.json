@@ -4,7 +4,8 @@
   "description": "demo for personal project",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint  --fix"
+    "lint:js": "eslint --fix",
+    "lint": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,7 @@
   },
   "lint-staged": {
     "*.{js,vue,ts,tsx}": [
-      "npm run lint",
+      "npm run lint:js",
       "git add"
     ]
   },

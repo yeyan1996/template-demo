@@ -6,16 +6,12 @@ module.exports = {
     node: true
   },
   extends: ["airbnb-base", "plugin:prettier/recommended"],
-  globals: {
-    Atomics: "readonly",
-    SharedArrayBuffer: "readonly"
-  },
-  parserOptions: {
-    ecmaVersion: 2018
-  },
   rules: {
+    "no-param-reassign": "off",
+    "global-require": "off",
+    "import/no-dynamic-require": "off",
     "import/no-unresolved": "off",
-    "no-console": "off",
-    "no-debugger": "off"
+    "no-console": "warning",
+    "no-debugger": "warning"
   }
 };

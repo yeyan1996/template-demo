@@ -11,7 +11,7 @@ module.exports = {
     "global-require": "off",
     "import/no-dynamic-require": "off",
     "import/no-unresolved": "off",
-    "no-console": "warning",
-    "no-debugger": "warning"
+    "no-console": "warn",
+    "no-debugger": "warn"
   }
 };
